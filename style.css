@@ -1,0 +1,131 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 2px solid #d4af37;
+}
+
+header .logo h1 {
+  font-size: 2rem;
+  color: #d4af37;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d4af37;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d4af37;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item {
+  width: 300px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact Section */
+#contact iframe {
+  width: 100%;
+  max-width: 640px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
